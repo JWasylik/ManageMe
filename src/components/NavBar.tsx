@@ -35,7 +35,6 @@ const NavBar = ({ onToggleTheme }: Props) => {
                 </div>
 
                 <div className="flex items-center gap-6">
-                    {/* Linki */}
                     <div className="flex items-center gap-4 text-sm font-medium text-gray-700 dark:text-gray-200">
                         <Link className="hover:text-blue-600 dark:hover:text-blue-400" to="/">
                             Strona główna
@@ -71,14 +70,14 @@ const NavBar = ({ onToggleTheme }: Props) => {
                         )}
                     </div>
 
-                    {/* Info o użytkowniku */}
+                    {/* User info */}
                     {user && (
                         <span className="text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap">
                             👋 {user.firstName} {user.lastName}
                         </span>
                     )}
 
-                    {/* Przełącznik motywu */}
+                    {/* Dark/Light switch */}
                     <button
                         onClick={onToggleTheme}
                         className="p-2 rounded bg-gray-100 dark:bg-gray-800 hover:ring-2 hover:ring-blue-300 transition"

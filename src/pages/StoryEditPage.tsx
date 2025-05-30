@@ -27,13 +27,12 @@ const StoryEditPage = () => {
                     console.error("Błąd podczas pobierania story:", err);
                 }
             }
-
             try {
                 const fetchedUsers = await UserService.getAllUsers();
                 setUsers(fetchedUsers);
             } catch (err) {
                 console.error("Błąd podczas pobierania użytkowników:", err);
-                setUsers([]); // fallback
+                setUsers([]);
             }
 
             setLoading(false);

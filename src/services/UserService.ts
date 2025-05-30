@@ -5,7 +5,7 @@ import {
     getDoc,
     getDocs,
 } from "firebase/firestore";
-import { db } from "../services/firebase"; // ścieżka do Twojej konfiguracji Firestore
+import { db } from "../services/firebase";
 
 const COLLECTION = "users";
 

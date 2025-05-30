@@ -19,7 +19,7 @@ const AddTaskPage = () => {
     const [estimatedHours, setEstimatedHours] = useState(1);
     const [loading, setLoading] = useState(true);
 
-    // 🔄 Pobierz activeProjectId z Firestore
+
     useEffect(() => {
         const fetchActiveProjectId = async () => {
             const currentUser = getAuth().currentUser;
@@ -35,7 +35,7 @@ const AddTaskPage = () => {
         fetchActiveProjectId();
     }, []);
 
-    // 📚 Pobierz historyjki dla aktywnego projektu
+
     useEffect(() => {
         const fetchStories = async () => {
             if (!projectId) {
@@ -57,7 +57,7 @@ const AddTaskPage = () => {
         fetchStories();
     }, [projectId]);
 
-    // ✅ Obsługa dodawania
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -86,7 +86,7 @@ const AddTaskPage = () => {
         }
     };
 
-    // 🛑 Brak aktywnego projektu
+
     if (!projectId) {
         return <p>Brak aktywnego projektu — wybierz projekt przed dodaniem zadania.</p>;
     }

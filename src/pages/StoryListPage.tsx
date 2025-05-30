@@ -5,7 +5,7 @@ import { StoryService } from "../services/StoryService";
 import { UserService } from "../services/UserService";
 import { UserSettingsService } from "../services/UserSettingsService";
 import { User } from "../types/User";
-import { getAuth } from "firebase/auth"; // 👈 dodaj ten import
+import { getAuth } from "firebase/auth";
 
 const StoryListPage = () => {
     const [stories, setStories] = useState<Story[]>([]);

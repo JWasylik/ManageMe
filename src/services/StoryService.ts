@@ -10,7 +10,7 @@ import {
     query,
     where,
 } from "firebase/firestore";
-import { db } from "../services/firebase"; // Zakładam, że masz `db` zdefiniowane
+import { db } from "../services/firebase";
 
 const COLLECTION = "stories";
 

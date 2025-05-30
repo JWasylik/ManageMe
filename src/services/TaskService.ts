@@ -10,7 +10,7 @@ import {
     query,
     where,
 } from "firebase/firestore";
-import { db } from "../services/firebase"; // Upewnij się, że `db` jest zainicjowane
+import { db } from "../services/firebase";
 
 const COLLECTION = "tasks";
 
