@@ -5,7 +5,7 @@ const HomePage = () => {
                 Witaj w aplikacji <span className="text-blue-600 dark:text-blue-400">ManageMe</span>! 👋
             </h1>
             <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-xl">
-                Zarządzaj swoimi projektami, historyjkami i zadaniami w przejrzysty sposób — z dowolnego miejsca.
+                Zarządzaj swoimi projektami, historyjkami i zadaniami w przejrzysty sposób.
             </p>
         </div>
     );
